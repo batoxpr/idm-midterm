@@ -8,7 +8,6 @@
 
 html,
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -21,13 +20,14 @@ a {
 }
 
 h1 {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   padding: 10px;  
+  margin-top: 5px;
     --bg-size: 400%;
-    --color-one: rgb(52, 200, 237);
-    --color-two:  rgb(184, 136, 255);
+    --color-one: rgb(255, 183, 58, 0.6);
+    --color-two:  rgb(255, 136, 255, 0.6);
     background: linear-gradient(
                   90deg,
                   var(--color-one),
@@ -36,12 +36,20 @@ h1 {
                 ) 0 0 / var(--bg-size) 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: move-bg 1s infinite linear;
+    animation: move-bg 10s infinite both;
+
+    -webkit-background-size: 150px;
+    color: $text-color;
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: infinite;
+    /* text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5); */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   h1 {
-    animation: move-bg 20s linear infinite;
+    animation: move-bg 60s linear infinite;
   }
   @keyframes move-bg {
     to {
@@ -50,12 +58,13 @@ h1 {
   }
 }
 
-h2 {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
+p {
+  font-size: x-large;
 }
 
-h3 {
-}
+@media (max-width: 600px) {
+
+  p {
+      font-size:large;
+  }
+  }

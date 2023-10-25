@@ -1,39 +1,126 @@
 .BoredCardWrapper {
-    border: solid black;
-    border-radius: 30px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.5cap;
+    background-color: azure;
+    border: solid greenyellow;
+    border-radius: 25px;
     display: flex;
+    font-family: Helvetica, Arial, sans-serif;
     flex-direction:column;
     gap: 7px;
-    margin: 30px 340px;
-    padding: 20px 80px;
-    justify-content: center;
-
-    background: linear-gradient(-45deg, #fecdbe, #ffa9ca, #9de4fd, #eec4ff);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    margin: 30px 300px;
+    padding: 20px 100px;
+    text-align:justify;
+    
 }
 
 .CocktailImg {
-    display: flex;
+    position: relative;
+    border: solid yellow;
+    display:flex;
     flex-direction:column;
-    justify-content: center;
-    object-fit: contain;
-    margin: 20px 20px;
     height: auto;
     width: 400px;
-    border: solid yellow;
+    margin: 20px 20px;
 }
+
+.CocktailInst {
+    display: none;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    padding: 20px;
+    background: rgba(248, 255, 57, 0.127);
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.CocktailImg:hover {
+    filter:brightness(6);
+  }
+
+.CocktailImg:hover .CocktailInst {
+  display: block;
+  opacity: 10;
+}
+
+  @-webkit-keyframes bob-on-hover {
+    0% {
+      -webkit-transform: translateY(-80px);
+      transform: translateY(-80px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes bob-on-hover {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes bob-on-hover-float {
+    100% {
+      -webkit-transform: translateY(-80px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes bob-on-hover-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+ 
+  .CocktailImg:hover, .bob-on-hover:focus, .bob-on-hover:active {
+    -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+    animation-name: bob-on-hover-float, bob-on-hover;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+
+@media (max-width: 1200px) {
+    .BoredCardWrapper {
+        margin: 30px 100px
+    }
+    
+    .CocktailImg {
+        width: 350px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .BoredCardWrapper {
+        margin: 30px 30px;
+    }
+
+    .CocktailImg {
+        width: 300px;
+    }
+
+    .p {
+        font-size: large;
+    }
+    }

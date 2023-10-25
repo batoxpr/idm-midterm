@@ -4,12 +4,12 @@ import styles from "@/app/components/BoredCard.module.css"
 
 const BORED_API = `https://www.boredapi.com/api/activity`;
 const COCKTAIL_API = `https://www.thecocktaildb.com/api/json/v1/1/random.php`;
-// Just like exercise three...
+
 export async function getStaticProps() {
-  // Get first API query
+  // first API query
   const responseBoredAPI = await fetch(BORED_API);
   const boredAPIData = await responseBoredAPI.json(); // This might be different for each API
-  // Get second API query
+  // second API query
   const responseCocktailAPI = await fetch(COCKTAIL_API);
   const cocktailAPIData = await responseCocktailAPI.json(); // This might be different for each API
   // Pass the responses down as props
@@ -26,7 +26,7 @@ export default function Home({boredAPIData, cocktailAPIData}) {
     console.log(cocktailAPIData);
     return (
         <main>
-            <h1>Bored & Thirsty?</h1>
+            <h1>bored & thirsty?</h1>
             {/* <h2>Are you feeling bored and thirsty today?</h2> */}
 
             <BoredCard 
@@ -35,6 +35,12 @@ export default function Home({boredAPIData, cocktailAPIData}) {
             participants={boredAPIData.participants}
             drink={cocktailAPIData.drinks[0].strDrink}
             drinkImg={cocktailAPIData.drinks[0].strDrinkThumb}
+            drinkInst={cocktailAPIData.drinks[0].strInstructions}
+            ing1={cocktailAPIData.drinks[0].strIngredient1}
+            ing2={cocktailAPIData.drinks[0].strIngredient2}
+            ing3={cocktailAPIData.drinks[0].strIngredient3}
+            ing4={cocktailAPIData.drinks[0].strIngredient4}
+            ing5={cocktailAPIData.drinks[0].strIngredient5}
             />
         </main>
     );
