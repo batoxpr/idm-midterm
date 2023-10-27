@@ -41,6 +41,8 @@ export default function Home({boredAPIData, cocktailAPIData}) {
             ing3={cocktailAPIData.drinks[0].strIngredient3}
             ing4={cocktailAPIData.drinks[0].strIngredient4}
             ing5={cocktailAPIData.drinks[0].strIngredient5}
+            groupImg={"https://i.pinimg.com/originals/a0/ac/f5/a0acf5ab2cd619deab46210077ed165c.gif"}
+            aloneImg={"https://i.pinimg.com/originals/a0/ac/f5/a0acf5ab2cd619deab46210077ed165c.gif"}
             />
         </main>
     );
