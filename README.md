@@ -16,6 +16,7 @@ Both the suggested activity and the recommended drink are shown together in a si
 
 
 3) Have the UI be interactive
+
 As the user hovers over the cocktail image, 
 - The website displays the ingredient list and instructions.
 - The brightness of the image changes and turns into a background.
