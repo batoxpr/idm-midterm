@@ -29,7 +29,7 @@ As the user hovers over the cocktail image:
    
 Depending on the number of persons the suggested activity requires, the UI will display a single icon or a group icon GIFs.
 
-6) Have the site styled
+5) Have the site styled
 - Animated gradient title
 - Pastel color palette
 - Minimalist layout
