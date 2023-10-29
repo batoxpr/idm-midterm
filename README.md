@@ -4,7 +4,7 @@ Dynamic Web Application with professor James Ayres
 
 Bato Batbileg
 
-![screenshot]([http://url/to/img.png](https://github.com/batoxpr/idm-midterm/blob/main/screenshots/desktop1.png?raw=true))
+![screenshot](https://github.com/batoxpr/idm-midterm/blob/main/screenshots/desktop1.png?raw=true)
 
 Project Requirements:
 1) Use two sources of data ->
