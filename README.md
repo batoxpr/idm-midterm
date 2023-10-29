@@ -4,6 +4,8 @@ Dynamic Web Application with professor James Ayres
 
 Bato Batbileg
 
+![screenshot]([http://url/to/img.png](https://github.com/batoxpr/idm-midterm/blob/main/screenshots/desktop1.png?raw=true))
+
 Project Requirements:
 1) Use two sources of data ->
 - API 1: Bored API: Random activity suggestion (https://www.boredapi.com/)
