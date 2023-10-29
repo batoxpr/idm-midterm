@@ -1,6 +1,6 @@
 # Midterm
 
-Dynamic Web Application with professor James Ayres
+Dynamic Web Application with Professor James Ayres
 
 Bato Batbileg
 
@@ -16,7 +16,7 @@ Project Requirements:
 Both the suggested activity and the recommended drink are shown together in a single layout.
 
 
-4) Have the UI be interactive
+3) Have the UI be interactive
 
 As the user hovers over the cocktail image:
 - The website displays the ingredient list and instructions.
