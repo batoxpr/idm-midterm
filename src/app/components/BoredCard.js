@@ -14,7 +14,7 @@ const BoredCard = ({
 }) => (
     
     <div className={styles.BoredCardWrapper}>
-        <p> You could: {activity} while sipping a glass of `{drink}` cocktail!</p>
+        <p> You could: {activity} while sipping a glass of '{drink}' cocktail!</p>
 
         <div className={styles.CocktailImg}>
             <img src={drinkImg} />
