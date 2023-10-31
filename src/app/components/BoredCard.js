@@ -11,11 +11,17 @@ const BoredCard = ({
     ing1, ing2, ing3, ing4, ing5,
     participants,
     type,
+    arrowImg
 }) => (
+
+    
     
     <div className={styles.BoredCardWrapper}>
         <p> You could: {activity} while sipping a glass of '{drink}' cocktail!</p>
+        
+            
 
+        <div className={styles.AnotherWrap}>
         <div className={styles.CocktailImg}>
             <img src={drinkImg} />
             <div className={styles.CocktailInst}>
@@ -24,10 +30,20 @@ const BoredCard = ({
             </div>
         </div>
 
+       
+        <div className={styles.ArrowImg}>
+                <img src={arrowImg}/>
+            </div>
+            </div>
+
+        
+
         <div className={styles.ActivityIconImage}>
             <ActivityIcon participants={participants} type={type} />
         </div>
     </div>
+    
+    
     
 )
 

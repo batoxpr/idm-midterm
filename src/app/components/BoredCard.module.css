@@ -30,6 +30,21 @@
   margin-left: 20px;
 }
 
+.AnotherWrap {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ArrowImg {
+  padding-top: 170px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 55px;
+  transform: rotate(-45deg)
+}
+
 .actWrap {
   display: flex;
   flex-direction: row;
