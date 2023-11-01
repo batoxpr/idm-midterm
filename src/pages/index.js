@@ -44,7 +44,7 @@ export default function Home({boredAPIData, cocktailAPIData}) {
             ing5={cocktailAPIData.drinks[0].strIngredient5}
             groupImg={"https://i.pinimg.com/originals/a0/ac/f5/a0acf5ab2cd619deab46210077ed165c.gif"}
             aloneImg={"https://i.pinimg.com/originals/a0/ac/f5/a0acf5ab2cd619deab46210077ed165c.gif"}
-            arrowImg={"https://o.remove.bg/downloads/6c0d3f25-bcb6-4c88-b030-5e3479381a0e/image-removebg-preview.png"}
+            arrowImg={"https://www.freeiconspng.com/thumbs/cursor-png/cursor-png-ico-icns-free-icon-download--icon100m-20.png"}
             />
         </main>
     );
